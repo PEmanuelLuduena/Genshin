@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personajes Genshin</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Personajes de Genshin Impact</h1>
+
+<input type="text" id="buscador" placeholder="Buscar personaje...">
+
+<div class="filtros">
+
+<select id="filtroElemento">
+<option value="todos">Todos los elementos</option>
+<option value="anemo">Anemo</option>
+<option value="pyro">Pyro</option>
+<option value="electro">Electro</option>
+</select>
+
+<select id="filtroRegion">
+<option value="todos">Todas las regiones</option>
+<option value="mondstadt">Mondstadt</option>
+<option value="liyue">Liyue</option>
+</select>
+
+</div>
+
+<p id="contador"></p>
+
+<!-- MONDSTADT -->
+<h2>Mondstadt</h2>
+<section class="region" id="mondstadt"></section>
+
+<!-- LIYUE -->
+<h2>Liyue</h2>
+<section class="region" id="liyue"></section>
+
+<!-- MODAL VIDEO -->
+<div id="modalTrailer" class="modal">
+<div class="modal-content">
+<span class="cerrar" onclick="cerrarTrailer()">X</span>
+<iframe id="videoTrailer" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<script src="personajes.js"></script>
+
+</body>
+</html>
